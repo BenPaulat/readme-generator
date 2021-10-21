@@ -18,7 +18,38 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'test',
+        name: 'description',
+        message: 'Please enter a description of the project.'
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'What are the steps required to install your project?'
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Provide instructions and examples for use.'
+    },
+    {
+        type: 'input',
+        name: 'image',
+        message: "Add a screeshot to the assets/images folder and enter it's file name here."
+    },
+    {
+        type: 'input',
+        name: 'contributor',
+        message: 'Please share the contributors to this project.'
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Please select a license for this project.',
+        choices: ['MIT', 'GPL3.0', 'Apache2.0', 'MPL2.0', 'Unlicense', 'none']
+    },
+    {
+        type: 'input',
+        name: 'tests',
         message: 'What command should be run to run tests?',
         default: 'npm test'
     }
