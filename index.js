@@ -18,6 +18,11 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'email',
+        message: 'What is your Email address?'
+    },
+    {
+        type: 'input',
         name: 'description',
         message: 'Please enter a description of the project.'
     },
